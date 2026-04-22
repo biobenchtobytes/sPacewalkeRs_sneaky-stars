@@ -1,0 +1,37 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Repository for workshop
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Bimsara
+    family-names: Pusweldeniya
+    email: bmjp895@uowmail.edu.au
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19688717
+  - type: other
+    value: licence
+    description: MIT
+repository-code: >-
+  https://github.com/BimsaraP/sPacewalkeRs_sneaky-stars---Forked-copy
+abstract: >-
+  Extravehicular activity (EVA) — colloquially known as
+  spacewalking — has been an essential component of human
+  spaceflight since Alexei Leonov became the first person to
+  venture outside a spacecraft in March 1965 [@nasa_eva].
+  Here we present a quantitative analysis of all recorded
+  EVAs conducted by NASA and Roscosmos from 1965 to present,
+  examining temporal trends in EVA frequency, cumulative
+  programme milestones, duration distributions, and the
+  contributions of individual crew members. Together, these
+  data provide a comprehensive quantitative record of one of
+  the most physically and technically demanding activities
+  in human spaceflight.
+license: MIT
+version: v1.0.0
+date-released: '2026-04-26'
