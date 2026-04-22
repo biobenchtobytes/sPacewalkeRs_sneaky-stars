@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/1217588916.svg)]
+[![DOI](https://zenodo.org/badge/1217588916.svg)](https://doi.org/10.5281/zenodo.19688716)
 # NASA Spacewalk Analysis — Reproducible Manuscript
 
 This repository contains a reproducible manuscript analysing six decades of NASA and Roscosmos extravehicular activity (EVA) data. Analysis figures are generated from Python and R scripts on every push to `main`, and the rendered manuscript is deployed to GitHub Pages.
