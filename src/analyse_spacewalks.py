@@ -26,7 +26,7 @@ df['year'] = df['date'].dt.year
 df['country'] = df['country'].str.strip()
 
 # Parse duration from H:MM string to decimal hours
-def parseDuration(d):
+def parse_duration(d):
     # converts H:MM to decimal hours
     try:
         parts = d.split(':')
@@ -34,7 +34,7 @@ def parseDuration(d):
     except:
         return None
 
-# df['duration_hrs'] = df['duration'].apply(parseDuration)
+df['duration_hrs'] = df['duration'].apply(parse_duration)
 
 colour_usa = '#e41a1c'
 colour_russia = '#4daf4a'
@@ -44,7 +44,7 @@ colour_russia = '#4daf4a'
 # --------------------------------------------------
 
 df_dur = df.copy()
-df_dur['duration_hrs'] = df_dur['duration'].apply(parseDuration)
+df_dur['duration_hrs'] = df_dur['duration'].apply(parse_duration)
 df_dur = df_dur.dropna(subset=['duration_hrs', 'date'])
 df_dur = df_dur.sort_values('date')
 df_dur['cumulative_hrs'] = df_dur['duration_hrs'].cumsum()
@@ -62,7 +62,7 @@ plt.close()
 # --------------------------------------------------
 
 df_dist = df.copy()
-df_dist['duration_hrs'] = df_dist['duration'].apply(parseDuration)
+df_dist['duration_hrs'] = df_dist['duration'].apply(parse_duration)
 df_dist = df_dist.dropna(subset=['duration_hrs', 'country'])
 df_dist = df_dist[df_dist['country'].isin(['USA', 'Russia'])]
 
@@ -84,7 +84,7 @@ plt.close()
 # --------------------------------------------------
 
 df_crew = df.copy()
-df_crew['duration_hrs'] = df_crew['duration'].apply(parseDuration)
+df_crew['duration_hrs'] = df_crew['duration'].apply(parse_duration)
 df_crew = df_crew.dropna(subset=['duration_hrs', 'crew'])
 
 astronaut_list = []
